@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #4f4d4d;
+  font-family: novecento-slab, serif;
+  font-weight: 500;
+  font-style: normal;
+  /*height: 100vh;
+  display: grid;
+  place-items: center;*/	
+}
+
+main {
+  height: 100vh;
+  display: grid;
+/*  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;*/
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: start;
+}
+
+/*.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.headerlinks {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 30px;
+  text-decoration: none;
+}
+*/
+  
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  justify-content: start;
+  grid-gap: 1rem;
+  padding: 1.5rem 3rem;
+  background-color: rgba(0,0,0,.2);
+}
+
+nav a {
+  padding: .75rem 1.25rem;
+  text-decoration: none;
+  color: #212121;
+  background-color: #e5e5e5;
+  border-radius: .25rem;
+  transition: background .1s;
+}
+
+.headertabs a:hover {
+  background-color: #456052;
+}
+
+.HomePage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0;
+  margin: 0;
+  padding: 0;
+  place-items: center;
+}
+
+.R{
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 5rem;
+  align-self: start;
+}
+
+.F{
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 4rem;
+  align-self: start;
+}
+
+.B{
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  z-index: 1;
+  writing-mode: vertical-rl;
+  padding-left: 13rem;
+  font-size: 4rem;
+}
+
+.HI{
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  height: 100vh;
+  /*width: 100vh;*/
+}
+
+/*.HomePage img{
+  place-items: center;
+}*/
+
+.ProductStory{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2,1fr);
+}
+
+.ProductStory p{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  font-size: 2rem;
+}
+
+.BrandStory{
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 1rem;
+}
+
+.Fails{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.features {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 1;
+}
+
+.feature h2 {
+  place-content: center;
+}
+
+.canfeatures{
+  height: 100vh;
+}
+footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  align-self: end;
+}
+
+footer p{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+ul{
+  grid-column: 2;
+  grid-row: 1;
+  list-style-type: none;
+
+}
+
+li{
+  float: left;
+}
+
+li a{
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+footer .faq{
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.faq a{
+  text-decoration: underline;
+  color: black;
+}
